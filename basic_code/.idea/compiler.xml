@@ -9,7 +9,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="数据类型转换、运算符、方法入门" target="1.5" />
+      <module name="数据类型转换、运算符、方法入门" target="14" />
     </bytecodeTargetLevel>
   </component>
 </project>
