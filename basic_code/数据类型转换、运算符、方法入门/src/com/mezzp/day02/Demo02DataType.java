@@ -1,12 +1,6 @@
 package com.mezzp.day02;
 
-/**
- * @author zzp
- * @version 1.0
- * @date 2020/8/10 20:19
- * FileName: Demo02DataType
- * Description: 强制数据类型转换
- */
+
 /**
 *强制类型转换
 *	1. 特点：代码需要进行特殊的格式处理，不能自动完成。
@@ -17,7 +11,15 @@ package com.mezzp.day02;
 *	2. byte/short/char这三种类型都可以发生数学运算，例如加法“+”.
 *	3. byte/short/char这三种类型在运算的时候，都会被首先提升成为int类型，然后再计算。
 *	4. boolean类型不能发生数据类型转换
-*/
+ *
+ */
+/**
+ * @author zzp
+ * @version 1.0
+ * @date 2020/8/10 20:19
+ * FileName: Demo02DataType
+ * Description: 强制数据类型转换
+ */
 public class Demo02DataType {
     public static void main(String[] args) {
         // 左边是int类型，右边是long类型，不一样
