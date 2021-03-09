@@ -23,6 +23,7 @@ public class Question1 {
         System.out.println("两数相乘的结果为：" + (a * b));
         System.out.println("两数相除的结果为：" + (a / b));
         System.out.println("两数取余数的结果为：" + (a % b));
+
         /*********end*********/
     }
 }
