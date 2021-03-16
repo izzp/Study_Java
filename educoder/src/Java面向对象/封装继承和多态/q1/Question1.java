@@ -1,4 +1,4 @@
-package Java面向对象.封装继承和多态;
+package Java面向对象.封装继承和多态.q1;
 
 /**
  * @author zhaozhipeng
