@@ -15,7 +15,7 @@ public class overridingTest {
         int age = 18;
         String school = "哈佛大学";
         Student s = new Student(name, age, school);
-        s.talk();
+        System.out.println(s.talk());
         /********* end *********/
 
     }
@@ -25,9 +25,8 @@ class Person {
     /********* begin *********/
     String name;
     int age;
-
-    void talk() {
-
+    String talk() {
+        return "我是：" + name + "，今年：" + age + "岁";
     }
     /********* end *********/
 }
@@ -42,8 +41,7 @@ class Student extends Person {
         this.school = school;
     }
 
-    public void talk() {
-        super.talk();
-        System.out.println("我是：" + name + "，今年：" + age + "岁，我在" + school + "上学");
+    String talk() {
+        return "我是：" + name + "，今年：" + age + "岁，我在" + school + "上学";
     }
 }
