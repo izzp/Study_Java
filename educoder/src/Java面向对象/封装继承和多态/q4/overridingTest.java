@@ -26,6 +26,7 @@ class Person {
     String name;
     int age;
     String talk() {
+
         return "我是：" + name + "，今年：" + age + "岁";
     }
     /********* end *********/
@@ -42,6 +43,7 @@ class Student extends Person {
     }
 
     String talk() {
-        return "我是：" + name + "，今年：" + age + "岁，我在" + school + "上学";
+        String str =super.talk();
+        return str+"，我在" + school + "上学";
     }
 }
