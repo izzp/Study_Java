@@ -11,12 +11,13 @@ public class TestPolymorphism {
     public static void main(String[] args) {
         // 以多态方式分别实例化子类对象并调用eat()方法
         /********* begin *********/
-        Dog dog =new Dog();
-        Cat cat = new Cat();
-        Lion lion=new Lion();
-        dog.eat();
-        cat.eat();
-        lion.eat();
+        Animal animal;
+        animal = new Dog();
+        animal.eat();
+        animal=new Cat();
+        animal.eat();
+        animal=new Lion();
+        animal.eat();
         /********* end *********/
     }
 }
