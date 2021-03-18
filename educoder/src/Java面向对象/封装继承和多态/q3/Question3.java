@@ -12,9 +12,8 @@ public class Question3 {
     public static void main(String[] args) {
         // 实例化一个Student类的对象s，为Student对象s中的school赋值，打印输出信息
         /********* begin *********/
-        Student s1 =new Student();
-        s1.school="哈佛大学";
-        System.out.println("姓名："+s1.name+"，年龄："+s1.age+"，学校："+s1.school);
+        Student s1 = new Student("张三",18,"哈佛大学");
+        System.out.println("姓名：" + s1.name + "，年龄：" + s1.age + "，学校：" + s1.school);
         /********* end *********/
     }
 }
@@ -23,7 +22,10 @@ class Person {
     /********* begin *********/
     String name;
     int age;
-    Person(){
+
+    Person(String name, int age) {
+        this.name = name;
+        this.age = age;
     }
     /********* end *********/
 }
@@ -31,10 +33,10 @@ class Person {
 class Student extends Person {
     /********* begin *********/
     String school;
-    String name = "张三";
-    int age = 18;
-    Student(){
-        super();
+
+    Student(String name,int age,String school) {
+        super(name, age);
+        this.school=school;
     }
     /********* end *********/
 }
