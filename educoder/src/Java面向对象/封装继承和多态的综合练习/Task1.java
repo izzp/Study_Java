@@ -41,6 +41,7 @@ public class Task1 {
 // 构造函数初始化name和sex
 // 声明抽象方法talk()
 // 声明抽象方法eat()
+
 abstract class Pet {
     /********* begin *********/
     protected String name;

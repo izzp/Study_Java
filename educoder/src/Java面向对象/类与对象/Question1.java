@@ -17,7 +17,7 @@ public class Question1 {
         wuhuarou.color = "棕色";
         wuhuarou.variety = "阿拉斯加";
         //输出小狗的属性
-        System.out.println("名字：" +wuhuarou.name +"，毛色：" +wuhuarou.color +"，品种：" +wuhuarou.variety);
+        System.out.println("名字：" + wuhuarou.name + "，毛色：" + wuhuarou.color + "，品种：" + wuhuarou.variety);
 
         //调用方法
         wuhuarou.eat();
@@ -28,13 +28,20 @@ public class Question1 {
 
 
 //在这里定义Dog类
-/********** Begin **********/
-public static class Dog{
-    String name;
-    String color;
-    String variety;
-    void eat(){System.out.println("啃骨头");}
-    void run(){System.out.println("叼着骨头跑");}
-}
+
+    /********** Begin **********/
+    public static class Dog {
+        String name;
+        String color;
+        String variety;
+
+        void eat() {
+            System.out.println("啃骨头");
+        }
+
+        void run() {
+            System.out.println("叼着骨头跑");
+        }
+    }
 /********** End **********/
 }

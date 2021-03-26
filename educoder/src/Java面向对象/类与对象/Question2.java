@@ -18,22 +18,25 @@ public class Question2 {
         //分别使用两种构造器来创建Person对象
         Person a = new Person();
         a.Person();
-        a.Person(name,sex);
+        a.Person(name, sex);
         /********** End **********/
 
     }
 
 //创建Person对象，并创建两种构造方法
-/********** Begin **********/
-static class Person{
-    String name;
-    String sex;
-    public void  Person(){
-        System.out.println("一个人被创建了");
+
+    /********** Begin **********/
+    static class Person {
+        String name;
+        String sex;
+
+        public void Person() {
+            System.out.println("一个人被创建了");
+        }
+
+        public void Person(String Name, String Sex) {
+            System.out.println("姓名：" + Name + "，性别：" + Sex + "，被创建了");
+        }
     }
-    public void  Person(String Name, String Sex){
-        System.out.println("姓名：" + Name + "，性别：" + Sex + "，被创建了");
-    }
-}
 /********** End **********/
 }
